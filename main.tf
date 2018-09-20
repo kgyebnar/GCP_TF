@@ -15,14 +15,3 @@ module "subnet-personal-vpc" {
 #  }
 
 }
-
-#resource "google_project" "test1" {
-#	name = "${var.project-name}"
-#	project_id          = "${var.project-id}"
-#	auto_create_network = "false"
-#	provisioner "local-exec" {
-#	    command = "gcloud -q compute networks delete default --project=${self.project}"
-#  }
-
-
-#}
