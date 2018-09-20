@@ -2,15 +2,6 @@
 
 Manages a network within GCE
 
-##### Example (minimum)
-
-```hcl
-module "network" {
-  source = "tasdikrahman/network/google"
-  name   = "${var.name}"
-}
-```
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |

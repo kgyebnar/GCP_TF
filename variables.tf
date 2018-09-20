@@ -5,13 +5,16 @@ variable "subnet_name" {
   default = "test-vpc-subnet"
 }
 variable "ip_cidr_range" {
-  default = "10.0.0.0/8"
+  default = "10.0.0.0/16"
+}
+variable "ip_cidr_range2" {
+  default = "10.255.0.0/16"
 }
 variable "subnetwork_region" {
-  default = "us-west1"
+  default = "europe-west3"
 }
 variable "region" {
-  default = "us-west1-a" # Oregon
+  default = "europe-west3" # Frankfurt
 }
 variable "project-name" {
   default = "809904749726"

@@ -1,5 +1,5 @@
 #/bin/bash
-# Delete the defaóult VPC FW rules and the default network
+# Delete the default VPC FW rules and the default network
 
 gcloud -q compute firewall-rules delete default-allow-internal
 gcloud -q compute firewall-rules delete default-allow-rdp

@@ -1,6 +1,11 @@
 variable "name" {
   type        = "string"
-  description = "Network name a create on GCP"
+  description = "Test GCP network"
+}
+
+variable "project-id" {
+  type        = "string"
+  description = "Project Id"
 }
 
 variable "auto_create_subnetworks" {
