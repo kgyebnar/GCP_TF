@@ -1,7 +1,7 @@
 variable "vpc_name" { default = "test-vpc" }
 variable "subnet_name" { default = "test-vpc-subnet" }
 variable "ip_cidr_range" { default = "10.0.0.0/23" }
-variable "subnet_count" { default = "5" }
+#variable "subnet_count" { default = "5" } # this will be generated via create.sh
 variable "subnet_newbit" { default = "5" }
 variable "subnetwork_region" { default = "europe-west3" }
 variable "region" {
@@ -27,3 +27,4 @@ variable "IDs" {
     OneMoreID  = "4"
   }
 }
+variable subnet_count { default = 1 }
