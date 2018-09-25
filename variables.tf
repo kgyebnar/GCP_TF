@@ -1,4 +1,4 @@
-variable "vpc_name" { default = "test-vpc" }
+#variable "vpc_name" { default = "test-vpc" }
 variable "subnet_name" { default = "test-vpc-subnet" }
 variable "ip_cidr_range" { default = "10.0.0.0/23" }
 #variable "subnet_count" { default = "5" } # this will be generated via create.sh
@@ -27,4 +27,5 @@ variable "IDs" {
     OneMoreID  = "4"
   }
 }
-variable subnet_count { default = 1 }
+variable "vpc_name" { default = "failsometimes" }
+variable "subnet_count" { default = "5" }
