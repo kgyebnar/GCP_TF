@@ -13,3 +13,5 @@ variable "auto_create_subnetworks" {
   default     = "false"
   description = "Auto-creation of the associated subnet"
 }
+variable "vpc_desc" { }
+variable "routing_mode" { }

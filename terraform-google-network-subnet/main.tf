@@ -1,12 +1,7 @@
-resource "google_compute_subnetwork" "new_subnetwork" {
-  name          = "${var.name}"
+resource "google_compute_subnetwork" "bar" {
   region        = "${var.subnetwork-region}"
-  network       = "${var.vpc}"
-  ip_cidr_range = "${var.ip_cidr_range}"
-}
-resource "google_compute_subnetwork" "new_subnetwork2" {
-  name          = "${var.name2}"
-  region        = "${var.subnetwork-region}"
-  network       = "${var.vpc}"
-  ip_cidr_range = "${var.ip_cidr_range2}"
+  name          = "${var.name}-auto-${count.index}"
+  count      = "${var.subnet_count}"
+  network = "${var.vpc}"
+  ip_cidr_range = "${cidrsubnet(var.ip_cidr_range, var.subnet_newbit, count.index)}"
 }

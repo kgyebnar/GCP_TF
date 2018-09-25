@@ -7,12 +7,14 @@ variable "subnet_name" {
 variable "subnet_name2" {
   default = "test-vpc-subnet2"
 }
-
 variable "ip_cidr_range" {
-  default = "10.0.0.0/24"
+  default = "10.0.0.0/23"
 }
-variable "ip_cidr_range2" {
-  default = "10.0.1.0/24"
+variable "subnet_count" {
+  default = "5"
+}
+variable "subnet_newbit" {
+  default = "5"
 }
 variable "subnetwork_region" {
   default = "europe-west3"
@@ -26,3 +28,5 @@ variable "project-name" {
 variable "project-id" {
   default = "test1-217014"
 }
+variable "vpc_desc" { default = "description of VPC - can be a list of parameters" }
+variable "routing_mode" { default = "GLOBAL" }
