@@ -1,6 +1,6 @@
 module "personal-vpc" {
-  source = "terraform-google-network"
-  name   = "${var.vpc_name}"
+    source = "terraform-google-network"
+    name   = "${var.vpc_name}"
     project-id = "${var.project-id}"
     routing_mode = "${var.routing_mode}"
     vpc_desc = "${var.vpc_desc}"
@@ -14,4 +14,5 @@ module "subnet-personal-vpc" {
   ip_cidr_range     = "${var.ip_cidr_range}"
   subnet_count     = "${var.subnet_count}"
   subnet_newbit     = "${var.subnet_newbit}"
+  vpc_flow_logs     = "${var.vpc_flow_logs}"
 }
